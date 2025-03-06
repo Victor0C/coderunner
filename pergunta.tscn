@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv3k63nrclvip"]
+
+[ext_resource type="Script" path="res://pergunta.gd" id="1_u4qhy"]
+
+[sub_resource type="SystemFont" id="SystemFont_5tlcx"]
+subpixel_positioning = 0
+
+[node name="pergunta" type="Control"]
+custom_minimum_size = Vector2(320, 80)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 636.0
+offset_top = 2.0
+offset_right = 1150.0
+offset_bottom = 172.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_u4qhy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.980392)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(499, 155)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -36.0
+offset_right = 156.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/HBoxContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = SubResource("SystemFont_5tlcx")
+theme_override_font_sizes/normal_font_size = 14

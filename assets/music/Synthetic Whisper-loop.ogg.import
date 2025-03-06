@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bo2va0itdagrp"
+path="res://.godot/imported/Synthetic Whisper-loop.ogg-29088796e5d6c8e8da22f45edea11b64.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Synthetic Whisper-loop.ogg"
+dest_files=["res://.godot/imported/Synthetic Whisper-loop.ogg-29088796e5d6c8e8da22f45edea11b64.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

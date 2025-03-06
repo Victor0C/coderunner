@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c88wosgdo5dqc"]
+
+[ext_resource type="PackedScene" uid="uid://bechrj50hloau" path="res://fases/fase1.tscn" id="1_ff6et"]
+[ext_resource type="PackedScene" uid="uid://djwpodvekhfy8" path="res://atores/player.tscn" id="2_shiut"]
+
+[node name="Main" type="Node2D"]
+
+[node name="fase1" parent="." instance=ExtResource("1_ff6et")]
+metadata/_edit_lock_ = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_shiut")]
+position = Vector2(244, 104)
