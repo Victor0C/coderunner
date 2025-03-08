@@ -1,8 +1,8 @@
-[gd_scene load_steps=28 format=4 uid="uid://bechrj50hloau"]
+[gd_scene load_steps=29 format=4 uid="uid://bechrj50hloau"]
 
 [ext_resource type="PackedScene" uid="uid://djwpodvekhfy8" path="res://atores/player.tscn" id="1_dvnh0"]
 [ext_resource type="Texture2D" uid="uid://o41348whci8r" path="res://assets/free-city-backgrounds-pixel-art/city 1/1.png" id="1_p505y"]
-[ext_resource type="Script" path="res://fases/fase_1.gd" id="1_y0ivt"]
+[ext_resource type="Script" path="res://fase_1.gd" id="1_y0ivt"]
 [ext_resource type="Texture2D" uid="uid://va1oib1lst0y" path="res://assets/free-city-backgrounds-pixel-art/city 1/2.png" id="2_jqer6"]
 [ext_resource type="Texture2D" uid="uid://cnytx17okmlgw" path="res://assets/free-city-backgrounds-pixel-art/city 1/3.png" id="3_t04ws"]
 [ext_resource type="Texture2D" uid="uid://breihcsiq7uy1" path="res://assets/free-city-backgrounds-pixel-art/city 1/4.png" id="4_nqopb"]
@@ -10,12 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://b4q5clwrima6x" path="res://assets/warped city files/warped city files/Assets/ENVIRONMENT/tileset.png" id="7_uruu4"]
 [ext_resource type="Texture2D" uid="uid://b4yt8hnqv5vwl" path="res://assets/Sidescroller Shooter - Central City/Sidescroller Shooter - Central City/Assets/Tiles.png" id="8_8kud5"]
 [ext_resource type="AudioStream" uid="uid://bo2va0itdagrp" path="res://assets/music/Synthetic Whisper-loop.ogg" id="9_qy0vw"]
-[ext_resource type="PackedScene" uid="uid://dv3k63nrclvip" path="res://pergunta.tscn" id="11_m4eng"]
+[ext_resource type="PackedScene" uid="uid://dv3k63nrclvip" path="res://hud/pergunta.tscn" id="11_m4eng"]
 [ext_resource type="PackedScene" uid="uid://cbhuuw6g2lyim" path="res://collectibles/alternativa.tscn" id="12_oowkq"]
 [ext_resource type="PackedScene" uid="uid://cl88rryocxaac" path="res://collectibles/alternativa_b.tscn" id="13_0gy0s"]
 [ext_resource type="PackedScene" uid="uid://cjrkjboo2siej" path="res://collectibles/alternativa_c.tscn" id="14_36560"]
 [ext_resource type="PackedScene" uid="uid://c2dcybiuschqu" path="res://collectibles/alternativa_d.tscn" id="15_o2x5t"]
 [ext_resource type="PackedScene" uid="uid://durxk736hk230" path="res://collectibles/alternativa_e.tscn" id="16_0qmbn"]
+[ext_resource type="PackedScene" uid="uid://bnpju53qiwwvx" path="res://hud/timer.tscn" id="17_252ju"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4f3"]
 size = Vector2(217, 942)
@@ -392,8 +393,11 @@ position = Vector2(392, 563)
 [node name="alternativa_e" parent="." instance=ExtResource("16_0qmbn")]
 position = Vector2(351, 563)
 
+[node name="Timer" parent="." instance=ExtResource("17_252ju")]
+
 [connection signal="collected" from="alternativa_a" to="." method="_on_alternativa_a_collected"]
 [connection signal="collected" from="alternativa_b" to="." method="_on_alternativa_b_collected"]
 [connection signal="collected" from="alternativa_c" to="." method="_on_alternativa_c_collected"]
 [connection signal="collected" from="alternativa_d" to="." method="_on_alternativa_d_collected"]
 [connection signal="collected" from="alternativa_e" to="." method="_on_alternativa_e_collected"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

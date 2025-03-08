@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnpju53qiwwvx"]
+
+[ext_resource type="Script" path="res://scripts/timer.gd" id="1_p2oj3"]
+
+[sub_resource type="SystemFont" id="SystemFont_fikr6"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_1vy8k"]
+font_size = 26
+
+[node name="Timer" type="Node2D"]
+position = Vector2(8, 5)
+script = ExtResource("1_p2oj3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -3.0
+offset_top = -8.0
+offset_right = 27.0
+offset_bottom = 28.0
+theme_override_fonts/font = SubResource("SystemFont_fikr6")
+text = "30"
+label_settings = SubResource("LabelSettings_1vy8k")
+
+[node name="timer1" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="timer1" to="." method="_on_timer_1_timeout"]
