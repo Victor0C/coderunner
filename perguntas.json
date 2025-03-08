@@ -1,112 +1,70 @@
 [
-  {
-	"pergunta": "O que significa a sigla 'JSON'?",
-	"alternativas": [
-	  "A) JavaScript Object Notation",
-	  "B) Java Standard Output Notation",
-	  "C) Java Serialized Object Notation",
-	  "D) JavaScript Output Network",
-	  "E) Java Syntax Ordered Notation"
-	],
-	"alternativa_correta": "A"
-  },
-  {
-	"pergunta": "Qual é a saída deste código Python?\nx = 3\ny = 2\nprint(x ** y)",
-	"alternativas": [
-	  "A) 6",
-	  "B) 3",
-	  "C) 9",
-	  "D) 5",
-	  "E) 8"
-	],
-	"alternativa_correta": "C"
-  },
-  {
-	"pergunta": "Qual desses métodos remove o último item de um array em JavaScript?",
-	"alternativas": [
-	  "A) array.remove()",
-	  "B) array.pop()",
-	  "C) array.shift()",
-	  "D) array.delete()",
-	  "E) array.splice(-1)"
-	],
-	"alternativa_correta": "B"
-  },
-  {
-	"pergunta": "O que esse código exibe em JavaScript?\nconsole.log(2 + '2' - 1);",
-	"alternativas": [
-	  "A) '21'",
-	  "B) '22'",
-	  "C) 3",
-	  "D) 21",
-	  "E) Erro"
-	],
-	"alternativa_correta": "D"
-  },
-  {
-	"pergunta": "Qual dessas palavras-chave NÃO é usada para declarar variáveis em JavaScript?",
-	"alternativas": [
-	  "A) let",
-	  "B) const",
-	  "C) var",
-	  "D) define",
-	  "E) Nenhuma das anteriores"
-	],
-	"alternativa_correta": "D"
-  },
-  {
-	"pergunta": "Qual será a saída desse código Python?\nlista = [3, 6, 9]\nprint(lista[1])",
-	"alternativas": [
-	  "A) 3",
-	  "B) 6",
-	  "C) 9",
-	  "D) Erro",
-	  "E) None"
-	],
-	"alternativa_correta": "B"
-  },
-  {
-	"pergunta": "Qual é o operador de igualdade estrita em JavaScript?",
-	"alternativas": [
-	  "A) =",
-	  "B) ==",
-	  "C) ===",
-	  "D) !==",
-	  "E) !==="
-	],
-	"alternativa_correta": "C"
-  },
-  {
-	"pergunta": "O que esse código retorna em Python?\nprint(bool(''))",
-	"alternativas": [
-	  "A) True",
-	  "B) False",
-	  "C) None",
-	  "D) Erro",
-	  "E) 'False'"
-	],
-	"alternativa_correta": "B"
-  },
-  {
-	"pergunta": "Em JavaScript, qual é o valor padrão de uma variável não inicializada?",
-	"alternativas": [
-	  "A) null",
-	  "B) 0",
-	  "C) undefined",
-	  "D) ''",
-	  "E) false"
-	],
-	"alternativa_correta": "C"
-  },
-  {
-	"pergunta": "Qual será a saída do seguinte código Python?\nprint(len('Godot'))",
-	"alternativas": [
-	  "A) 4",
-	  "B) 5",
-	  "C) 6",
-	  "D) '5'",
-	  "E) Erro"
-	],
-	"alternativa_correta": "B"
-  }
+	{
+		"pergunta": "O que significa a sigla 'JSON'?",
+		"alternativas": [
+			"A) JavaScript Object Notation",
+			"B) Java Standard Output Notation",
+			"C) Java Serialized Object Notation",
+			"D) JavaScript Output Network",
+			"E) Java Syntax Ordered Notation"
+		],
+		"alternativa_correta": "A) JavaScript Object Notation"
+	},
+	{
+		"pergunta": "Qual é a saída deste código Python?\nx = 3\ny = 2\nprint(x ** y)",
+		"alternativas": ["A) 6", "B) 3", "C) 9", "D) 5", "E) 8"],
+		"alternativa_correta": "C) 9"
+	},
+	{
+		"pergunta": "Qual desses métodos remove o último item de um array em JavaScript?",
+		"alternativas": [
+			"A) array.remove()",
+			"B) array.pop()",
+			"C) array.shift()",
+			"D) array.delete()",
+			"E) array.splice(-1)"
+		],
+		"alternativa_correta": "B) array.pop()"
+	},
+	{
+		"pergunta": "O que esse código exibe em JavaScript?\nconsole.log(2 + '2' - 1);",
+		"alternativas": ["A) '21'", "B) '22'", "C) 3", "D) 21", "E) Erro"],
+		"alternativa_correta": "D) 21"
+	},
+	{
+		"pergunta": "Qual dessas palavras-chave NÃO é usada para declarar variáveis em JavaScript?",
+		"alternativas": [
+			"A) let",
+			"B) const",
+			"C) var",
+			"D) define",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "D) define"
+	},
+	{
+		"pergunta": "Qual será a saída desse código Python?\nlista = [3, 6, 9]\nprint(lista[1])",
+		"alternativas": ["A) 3", "B) 6", "C) 9", "D) Erro", "E) None"],
+		"alternativa_correta": "B) 6"
+	},
+	{
+		"pergunta": "Qual é o operador de igualdade estrita em JavaScript?",
+		"alternativas": ["A) =", "B) ==", "C) ===", "D) !==", "E) !==="],
+		"alternativa_correta": "C) ==="
+	},
+	{
+		"pergunta": "O que esse código retorna em Python?\nprint(bool(''))",
+		"alternativas": ["A) True", "B) False", "C) None", "D) Erro", "E) 'False'"],
+		"alternativa_correta": "B) False"
+	},
+	{
+		"pergunta": "Em JavaScript, qual é o valor padrão de uma variável não inicializada?",
+		"alternativas": ["A) null", "B) 0", "C) undefined", "D) ''", "E) false"],
+		"alternativa_correta": "C) undefined"
+	},
+	{
+		"pergunta": "Qual será a saída do seguinte código Python?\nprint(len('Godot'))",
+		"alternativas": ["A) 4", "B) 5", "C) 6", "D) '5'", "E) Erro"],
+		"alternativa_correta": "B) 5"
+	}
 ]

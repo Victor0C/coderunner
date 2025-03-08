@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://bechrj50hloau"]
+[gd_scene load_steps=28 format=4 uid="uid://bechrj50hloau"]
 
 [ext_resource type="PackedScene" uid="uid://djwpodvekhfy8" path="res://atores/player.tscn" id="1_dvnh0"]
 [ext_resource type="Texture2D" uid="uid://o41348whci8r" path="res://assets/free-city-backgrounds-pixel-art/city 1/1.png" id="1_p505y"]
@@ -11,6 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://b4yt8hnqv5vwl" path="res://assets/Sidescroller Shooter - Central City/Sidescroller Shooter - Central City/Assets/Tiles.png" id="8_8kud5"]
 [ext_resource type="AudioStream" uid="uid://bo2va0itdagrp" path="res://assets/music/Synthetic Whisper-loop.ogg" id="9_qy0vw"]
 [ext_resource type="PackedScene" uid="uid://dv3k63nrclvip" path="res://pergunta.tscn" id="11_m4eng"]
+[ext_resource type="PackedScene" uid="uid://cbhuuw6g2lyim" path="res://collectibles/alternativa.tscn" id="12_oowkq"]
+[ext_resource type="PackedScene" uid="uid://cl88rryocxaac" path="res://collectibles/alternativa_b.tscn" id="13_0gy0s"]
+[ext_resource type="PackedScene" uid="uid://cjrkjboo2siej" path="res://collectibles/alternativa_c.tscn" id="14_36560"]
+[ext_resource type="PackedScene" uid="uid://c2dcybiuschqu" path="res://collectibles/alternativa_d.tscn" id="15_o2x5t"]
+[ext_resource type="PackedScene" uid="uid://durxk736hk230" path="res://collectibles/alternativa_e.tscn" id="16_0qmbn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4f3"]
 size = Vector2(217, 942)
@@ -371,3 +376,24 @@ autoplay = true
 parameters/looping = true
 
 [node name="pergunta" parent="." instance=ExtResource("11_m4eng")]
+
+[node name="alternativa_a" parent="." instance=ExtResource("12_oowkq")]
+position = Vector2(519, 559)
+
+[node name="alternativa_b" parent="." instance=ExtResource("13_0gy0s")]
+position = Vector2(478, 563)
+
+[node name="alternativa_c" parent="." instance=ExtResource("14_36560")]
+position = Vector2(435, 561)
+
+[node name="alternativa_d" parent="." instance=ExtResource("15_o2x5t")]
+position = Vector2(392, 563)
+
+[node name="alternativa_e" parent="." instance=ExtResource("16_0qmbn")]
+position = Vector2(351, 563)
+
+[connection signal="collected" from="alternativa_a" to="." method="_on_alternativa_a_collected"]
+[connection signal="collected" from="alternativa_b" to="." method="_on_alternativa_b_collected"]
+[connection signal="collected" from="alternativa_c" to="." method="_on_alternativa_c_collected"]
+[connection signal="collected" from="alternativa_d" to="." method="_on_alternativa_d_collected"]
+[connection signal="collected" from="alternativa_e" to="." method="_on_alternativa_e_collected"]
