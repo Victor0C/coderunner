@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="coderunner"
-run/main_scene="res://fases/fase1.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="uid://vnqf4cd7iijg"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [audio]
