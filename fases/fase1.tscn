@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://bechrj50hloau"]
+[gd_scene load_steps=30 format=4 uid="uid://bechrj50hloau"]
 
 [ext_resource type="PackedScene" uid="uid://djwpodvekhfy8" path="res://atores/player.tscn" id="1_dvnh0"]
 [ext_resource type="Texture2D" uid="uid://o41348whci8r" path="res://assets/free-city-backgrounds-pixel-art/city 1/1.png" id="1_p505y"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c2dcybiuschqu" path="res://collectibles/alternativa_d.tscn" id="15_o2x5t"]
 [ext_resource type="PackedScene" uid="uid://durxk736hk230" path="res://collectibles/alternativa_e.tscn" id="16_0qmbn"]
 [ext_resource type="PackedScene" uid="uid://bnpju53qiwwvx" path="res://hud/timer.tscn" id="17_252ju"]
+[ext_resource type="PackedScene" uid="uid://dlui33rrsgksj" path="res://fases/pause_menu.tscn" id="18_g1dme"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4f3"]
 size = Vector2(217, 942)
@@ -394,6 +395,9 @@ position = Vector2(392, 563)
 position = Vector2(351, 563)
 
 [node name="Timer" parent="." instance=ExtResource("17_252ju")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("18_g1dme")]
+process_mode = 3
 
 [connection signal="collected" from="alternativa_a" to="." method="_on_alternativa_a_collected"]
 [connection signal="collected" from="alternativa_b" to="." method="_on_alternativa_b_collected"]

@@ -6,15 +6,15 @@
 [ext_resource type="Texture2D" uid="uid://u7pki8o4g6je" path="res://assets/cyberpunk-street-files/cyberpunk-street-files/Assets/city skyline/Layers/front.png" id="4_jvkc0"]
 [ext_resource type="FontFile" uid="uid://dn14mrxwvb7aw" path="res://PixelFontBundle2_v1_0/ThickPixels.ttf" id="5_bxeau"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wf2c"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x436k"]
 bg_color = Color(0.622203, 0.590635, 0.602818, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lo4tm"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_il4fb"]
 bg_color = Color(0.403508, 0.578849, 0, 0)
 
 [sub_resource type="Theme" id="Theme_rd8cm"]
-Button/styles/normal = SubResource("StyleBoxFlat_3wf2c")
-Button/styles/pressed = SubResource("StyleBoxFlat_lo4tm")
+Button/styles/normal = SubResource("StyleBoxFlat_x436k")
+Button/styles/pressed = SubResource("StyleBoxFlat_il4fb")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bi5o"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
