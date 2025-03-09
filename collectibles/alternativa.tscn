@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://cbhuuw6g2lyim"]
 
-[ext_resource type="Script" path="res://scripts/alternativa.gd" id="1_eqh4n"]
+[ext_resource type="Script" uid="uid://by18xaigvgkxr" path="res://scripts/alternativa.gd" id="1_eqh4n"]
 [ext_resource type="Texture2D" uid="uid://bb1ak3ltacl5e" path="res://assets/Mini FX, Items & UI/Effects/Yellow_Sparkle (16 x 16).png" id="2_8sj03"]
 [ext_resource type="Texture2D" uid="uid://b25t6llcqb6c5" path="res://assets/Pixel Fantasy Icons Letter Buttons/MV Icons Letter Buttons/Individual Icons/yellow-A.png" id="2_efnyu"]
 [ext_resource type="Texture2D" uid="uid://d0r8x3kaeledg" path="res://assets/Pixel Fantasy Icons Letter Buttons/MV Icons Letter Buttons/Individual Icons/yellow-A-pushed.png" id="3_7qkw8"]
@@ -61,6 +61,7 @@ collision_layer = 8
 script = ExtResource("1_eqh4n")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 position = Vector2(0.250004, 6.25)
 scale = Vector2(0.734375, 0.734375)
 sprite_frames = SubResource("SpriteFrames_el8v8")

@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var PauseMenuDisable = $PauseMenu
+@onready var GmOverPanel = $GameOver
 @onready var pergunta = $pergunta as Control
 @onready var timer = $Timer as Node2D
 @onready var alternativas = [
@@ -12,6 +14,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GmOverPanel.visible = false
 	for i in range(alternativas.size()):
 		alternativas[i].value = pergunta.alternativas[i]
 
@@ -49,4 +52,6 @@ func _on_alternativa_e_collected(value: String) -> void:
 
 func _on_timer_timeout() -> void:
 	print('Acabou a fase e o player perdeu')
+	GmOverPanel.visible = true
+	PauseMenuDisable.set_process(false)
 	get_tree().paused = true
