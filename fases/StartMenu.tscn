@@ -1,0 +1,144 @@
+[gd_scene load_steps=13 format=3 uid="uid://vnqf4cd7iijg"]
+
+[ext_resource type="Script" uid="uid://dvuwwuhy4xfy2" path="res://scripts/start_menu.gd" id="1_x436k"]
+[ext_resource type="Texture2D" uid="uid://bjldi50rggh1d" path="res://assets/cyberpunk-street-files/cyberpunk-street-files/Assets/city skyline/Layers/back.png" id="2_il4fb"]
+[ext_resource type="Texture2D" uid="uid://d3cqupl3nl0px" path="res://assets/cyberpunk-street-files/cyberpunk-street-files/Assets/city skyline/Layers/buildings.png" id="3_gy40j"]
+[ext_resource type="Texture2D" uid="uid://u7pki8o4g6je" path="res://assets/cyberpunk-street-files/cyberpunk-street-files/Assets/city skyline/Layers/front.png" id="4_jvkc0"]
+[ext_resource type="FontFile" uid="uid://dn14mrxwvb7aw" path="res://PixelFontBundle2_v1_0/ThickPixels.ttf" id="5_bxeau"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x436k"]
+bg_color = Color(0.622203, 0.590635, 0.602818, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_il4fb"]
+bg_color = Color(0.403508, 0.578849, 0, 0)
+
+[sub_resource type="Theme" id="Theme_rd8cm"]
+Button/styles/normal = SubResource("StyleBoxFlat_x436k")
+Button/styles/pressed = SubResource("StyleBoxFlat_il4fb")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bi5o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7htnq"]
+bg_color = Color(0.6, 0.92549, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rd8cm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_627k2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="StartMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x436k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 300)
+scale = Vector2(4, 3.125)
+texture = ExtResource("2_il4fb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 300)
+scale = Vector2(4, 3.125)
+texture = ExtResource("3_gy40j")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 300)
+scale = Vector2(4, 3.125)
+texture = ExtResource("4_jvkc0")
+
+[node name="Start" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 2
+offset_left = 139.0
+offset_top = 424.0
+offset_right = 202.0
+offset_bottom = 440.0
+scale = Vector2(6.94, 6.94)
+focus_neighbor_left = NodePath("../Quit")
+theme = SubResource("Theme_rd8cm")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_color = Color(0, 0.584314, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
+theme_override_colors/font_color = Color(0, 0.764706, 0.121569, 1)
+theme_override_colors/font_focus_color = Color(0, 0.596078, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.431373, 0, 0.611765)
+theme_override_fonts/font = ExtResource("5_bxeau")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8bi5o")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7htnq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rd8cm")
+text = "START"
+
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 2
+offset_left = 669.935
+offset_top = 424.0
+offset_right = 708.935
+offset_bottom = 440.0
+scale = Vector2(6.94, 6.94)
+focus_neighbor_right = NodePath("../Start")
+theme = SubResource("Theme_rd8cm")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_color = Color(0.892434, 0, 0.230223, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
+theme_override_colors/font_color = Color(0.925262, 0, 0.0737862, 1)
+theme_override_colors/font_focus_color = Color(0.538282, 0, 0.0543289, 1)
+theme_override_colors/font_pressed_color = Color(0.667123, 0.00292221, 0.134437, 0.611765)
+theme_override_fonts/font = ExtResource("5_bxeau")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8bi5o")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7htnq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rd8cm")
+text = "QUIT"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 191.0
+offset_top = 110.0
+offset_right = 958.0
+offset_bottom = 248.0
+theme_override_colors/word_highlighted_color = Color(0, 0, 0, 0)
+theme_override_colors/current_line_color = Color(0, 0, 0, 0)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/font_readonly_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_colors/search_result_border_color = Color(0, 0, 0, 0)
+theme_override_colors/search_result_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("5_bxeau")
+theme_override_font_sizes/font_size = 131
+theme_override_styles/normal = SubResource("StyleBoxFlat_627k2")
+text = "CODERUNNER"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnpju53qiwwvx"]
 
-[ext_resource type="Script" path="res://scripts/timer.gd" id="1_p2oj3"]
+[ext_resource type="Script" uid="uid://c8nau2hsbnciv" path="res://scripts/timer.gd" id="1_p2oj3"]
 
 [sub_resource type="SystemFont" id="SystemFont_fikr6"]
 subpixel_positioning = 0
@@ -13,6 +13,7 @@ position = Vector2(8, 5)
 script = ExtResource("1_p2oj3")
 
 [node name="Label" type="Label" parent="."]
+texture_filter = 1
 offset_left = -3.0
 offset_top = -8.0
 offset_right = 27.0
