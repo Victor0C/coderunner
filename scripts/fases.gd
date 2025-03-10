@@ -11,6 +11,7 @@ extends Node2D
 	]
 
 signal timeout
+signal win
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,7 +24,7 @@ func _process(delta: float) -> void:
 
 func hadle_collect(value: String):
 	if value == pergunta.resposta_correta:
-		print('Certo')
+		emit_signal("win", self)
 	else:
 		timer.current_time -= 15
 		

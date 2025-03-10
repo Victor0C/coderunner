@@ -19,3 +19,4 @@ offset_right = -40.0
 offset_bottom = 44.0
 
 [connection signal="timeout" from="fase1" to="." method="_on_fase_1_timeout"]
+[connection signal="win" from="fase1" to="." method="_on_fase_1_win"]

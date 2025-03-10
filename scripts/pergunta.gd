@@ -25,6 +25,9 @@ func exibir_pergunta_aleatoria(perguntas: Array):
 	rich_text.clear()
 	var pergunta = perguntas.pick_random()  # Escolhe uma pergunta aleatória
 	resposta_correta = pergunta["alternativa_correta"]
+	
+	print(resposta_correta)
+	
 	alternativas = pergunta["alternativas"]
 	rich_text.append_text(pergunta["pergunta"] + "\n")
 	for alternativa in pergunta["alternativas"]:
