@@ -18,15 +18,15 @@ corner_radius_bottom_left = 4
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enqah"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wf2c"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e11ph"]
 bg_color = Color(0.622203, 0.590635, 0.602818, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lo4tm"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsjha"]
 bg_color = Color(0.403508, 0.578849, 0, 0)
 
 [sub_resource type="Theme" id="Theme_sdl08"]
-Button/styles/normal = SubResource("StyleBoxFlat_3wf2c")
-Button/styles/pressed = SubResource("StyleBoxFlat_lo4tm")
+Button/styles/normal = SubResource("StyleBoxFlat_e11ph")
+Button/styles/pressed = SubResource("StyleBoxFlat_rsjha")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wiayf"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -39,6 +39,8 @@ border_color = Color(0.8, 0.8, 0.8, 0)
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="PauseMenu" type="Control"]
+process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -56,10 +58,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_8c3j4")
 [node name="TextEdit" type="TextEdit" parent="Panel"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 239.0
-offset_top = 35.0
-offset_right = 547.0
-offset_bottom = 132.0
+offset_left = 214.0
+offset_top = 25.0
+offset_right = 580.0
+offset_bottom = 122.0
 theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
 theme_override_colors/current_line_color = Color(0, 0, 0, 1)
 theme_override_colors/background_color = Color(0, 0, 0, 0)
@@ -76,15 +78,20 @@ theme_override_colors/search_result_color = Color(0, 0, 0, 0)
 theme_override_fonts/font = ExtResource("2_rsjha")
 theme_override_font_sizes/font_size = 91
 theme_override_styles/normal = SubResource("StyleBoxFlat_enqah")
-text = "PAUSED"
+text = "PAUSADO"
 
 [node name="Resume" type="Button" parent="Panel"]
 texture_filter = 1
-layout_mode = 0
-offset_left = 257.485
-offset_top = 168.0
-offset_right = 312.485
-offset_bottom = 184.0
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -61.0
+offset_right = -623.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(4.84, 4.84)
 focus_neighbor_top = NodePath("../MainMenu")
 theme = SubResource("Theme_sdl08")
@@ -98,50 +105,28 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(7.94157e-07, 0.700364, 0.0785852, 1)
 theme_override_colors/font_focus_color = Color(0.585062, 0.585062, 0.585062, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 0.611765)
 theme_override_fonts/font = ExtResource("2_rsjha")
 theme_override_styles/focus = SubResource("StyleBoxFlat_wiayf")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_c6ocd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_q52y7")
-text = "Resume"
-
-[node name="Restart" type="Button" parent="Panel"]
-texture_filter = 1
-layout_mode = 0
-offset_left = 249.705
-offset_top = 266.295
-offset_right = 308.705
-offset_bottom = 282.295
-scale = Vector2(4.84, 4.84)
-theme = SubResource("Theme_sdl08")
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
-theme_override_colors/font_hover_color = Color(0.490009, 0.476837, 0.468054, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
-theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
-theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(0.585062, 0.585062, 0.585062, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 0.611765)
-theme_override_fonts/font = ExtResource("2_rsjha")
-theme_override_styles/focus = SubResource("StyleBoxFlat_wiayf")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_c6ocd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q52y7")
-text = "Restart"
+text = "CONTINUAR"
 
 [node name="MainMenu" type="Button" parent="Panel"]
 texture_filter = 1
-layout_mode = 0
-offset_left = 214.99
-offset_top = 364.575
-offset_right = 289.99
-offset_bottom = 380.575
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = 50.0
+offset_right = -610.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(4.84, 4.84)
 focus_neighbor_bottom = NodePath("../Resume")
 theme = SubResource("Theme_sdl08")
@@ -155,15 +140,14 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.894153, 0.324464, 0, 1)
 theme_override_colors/font_focus_color = Color(0.585062, 0.585062, 0.585062, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 0.611765)
 theme_override_fonts/font = ExtResource("2_rsjha")
 theme_override_styles/focus = SubResource("StyleBoxFlat_wiayf")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_c6ocd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_q52y7")
-text = "Main Menu"
+text = "MENU PRINCIPAL"
 
 [connection signal="pressed" from="Panel/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="Panel/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="Panel/MainMenu" to="." method="_on_main_menu_pressed"]

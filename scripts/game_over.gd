@@ -1,6 +1,7 @@
 extends Control
 
 func _on_restart_game_over_pressed():
+	visible = false
 	get_tree().reload_current_scene()
 
 

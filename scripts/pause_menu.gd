@@ -1,19 +1,20 @@
 extends Control
-@onready var PauseMenu = $Panel
 var isPaused = false
 
 func _ready():
-	PauseMenu.visible = false
-	get_tree().paused = false
+	pass
+
 func _process(delta):
 	if Input.is_action_just_pressed("Esc") and isPaused == false:
-		PauseMenu.visible = true
-		var isPaused = true
+		visible = true
+		isPaused = true
 		get_tree().paused = true
 		print("Pausado")
 func _on_resume_pressed():
-	PauseMenu.visible = false
-	var isPaused = false
+	print('_on_resume_pressed')
+	
+	visible = false
+	isPaused = false
 	get_tree().paused = false
 	print("Jogo Retomado")
 

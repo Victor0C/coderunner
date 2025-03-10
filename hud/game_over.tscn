@@ -4,16 +4,16 @@
 [ext_resource type="FontFile" uid="uid://dn14mrxwvb7aw" path="res://PixelFontBundle2_v1_0/ThickPixels.ttf" id="2_k6dyq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6dyq"]
-bg_color = Color(0, 0, 0, 0.623529)
+bg_color = Color(0, 0, 0, 0.698039)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(1, 0, 0.0862745, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+border_color = Color(1, 0.271145, 0.23783, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x436k"]
 bg_color = Color(0.622203, 0.590635, 0.602818, 0)
@@ -39,6 +39,8 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="GameOver" type="Control"]
+process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,28 +50,19 @@ grow_vertical = 2
 script = ExtResource("1_wtplu")
 
 [node name="Panel" type="Panel" parent="."]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.172
-anchor_top = 0.057
-anchor_right = 0.838
-anchor_bottom = 0.937
-offset_left = -0.144012
-offset_top = -0.200001
-offset_right = -0.376099
-offset_bottom = -0.200012
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 193.0
+offset_top = 20.0
+offset_right = 980.0
+offset_bottom = 506.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_k6dyq")
 
 [node name="RestartGameOver" type="Button" parent="Panel"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 52.0
-offset_top = 311.0
-offset_right = 111.0
-offset_bottom = 327.0
+offset_left = 215.0
+offset_top = 172.0
+offset_right = 285.0
+offset_bottom = 188.0
 scale = Vector2(4.875, 4.875)
 focus_neighbor_left = NodePath("../QuitGameOver")
 theme = SubResource("Theme_wtplu")
@@ -83,22 +76,22 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
-theme_override_colors/font_color = Color(0.996974, 0, 0.0153872, 1)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_focus_color = Color(0.815006, 0, 0.0117749, 1)
 theme_override_colors/font_pressed_color = Color(0.671705, 0, 0.034214, 0.611765)
 theme_override_fonts/font = ExtResource("2_k6dyq")
 theme_override_styles/focus = SubResource("StyleBoxFlat_5ugim")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_d2287")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fxjte")
-text = "Restart"
+text = "REINICIAR"
 
 [node name="QuitGameOver" type="Button" parent="Panel"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 512.0
-offset_top = 312.0
-offset_right = 546.0
-offset_bottom = 328.0
+offset_left = 231.0
+offset_top = 262.0
+offset_right = 295.0
+offset_bottom = 278.0
 scale = Vector2(4.875, 4.875)
 focus_neighbor_right = NodePath("../RestartGameOver")
 theme = SubResource("Theme_wtplu")
@@ -112,22 +105,22 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 0)
-theme_override_colors/font_color = Color(0.996974, 0, 0.0153872, 1)
+theme_override_colors/font_color = Color(0.896723, 0.306634, 0.111556, 1)
 theme_override_colors/font_focus_color = Color(0.815006, 0, 0.0117749, 1)
 theme_override_colors/font_pressed_color = Color(0.671705, 0, 0.034214, 0.611765)
 theme_override_fonts/font = ExtResource("2_k6dyq")
 theme_override_styles/focus = SubResource("StyleBoxFlat_5ugim")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_d2287")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fxjte")
-text = "Quit"
+text = "DESISTIR"
 
 [node name="GmOverText" type="TextEdit" parent="Panel"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 190.0
-offset_top = 102.0
-offset_right = 739.0
-offset_bottom = 235.0
+offset_left = 63.0
+offset_top = 26.0
+offset_right = 1028.0
+offset_bottom = 159.0
 scale = Vector2(0.695, 0.695)
 theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
 theme_override_colors/current_line_color = Color(0, 0, 0, 1)
@@ -145,7 +138,7 @@ theme_override_colors/search_result_color = Color(0, 0, 0, 0)
 theme_override_fonts/font = ExtResource("2_k6dyq")
 theme_override_font_sizes/font_size = 126
 theme_override_styles/normal = SubResource("StyleBoxFlat_wtplu")
-text = "Time's up"
+text = "O TEMPO ACABOU"
 
 [connection signal="pressed" from="Panel/RestartGameOver" to="." method="_on_restart_game_over_pressed"]
 [connection signal="pressed" from="Panel/QuitGameOver" to="." method="_on_quit_game_over_pressed"]

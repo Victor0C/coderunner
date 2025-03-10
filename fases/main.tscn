@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c88wosgdo5dqc"]
+
+[ext_resource type="Script" uid="uid://v1d00qhejcpm" path="res://scripts/main.gd" id="1_llq2q"]
+[ext_resource type="PackedScene" uid="uid://bechrj50hloau" path="res://fases/fase1.tscn" id="2_s032e"]
+[ext_resource type="PackedScene" uid="uid://dlui33rrsgksj" path="res://hud/pause_menu.tscn" id="3_arrkd"]
+[ext_resource type="PackedScene" uid="uid://dhdn24ofwfwm" path="res://hud/game_over.tscn" id="4_erm7h"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_llq2q")
+
+[node name="fase1" parent="." instance=ExtResource("2_s032e")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_arrkd")]
+
+[node name="GameOver" parent="." instance=ExtResource("4_erm7h")]
+offset_left = -40.0
+offset_top = 44.0
+offset_right = -40.0
+offset_bottom = 44.0
+
+[connection signal="timeout" from="fase1" to="." method="_on_fase_1_timeout"]

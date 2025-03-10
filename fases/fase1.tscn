@@ -1,8 +1,8 @@
-[gd_scene load_steps=31 format=4 uid="uid://bechrj50hloau"]
+[gd_scene load_steps=29 format=4 uid="uid://bechrj50hloau"]
 
+[ext_resource type="Script" uid="uid://dat6w140e0fl7" path="res://scripts/fases.gd" id="1_8c3j4"]
 [ext_resource type="PackedScene" uid="uid://djwpodvekhfy8" path="res://atores/player.tscn" id="1_dvnh0"]
 [ext_resource type="Texture2D" uid="uid://o41348whci8r" path="res://assets/free-city-backgrounds-pixel-art/city 1/1.png" id="1_p505y"]
-[ext_resource type="Script" uid="uid://crtvv8psthon8" path="res://fase_1.gd" id="1_y0ivt"]
 [ext_resource type="Texture2D" uid="uid://va1oib1lst0y" path="res://assets/free-city-backgrounds-pixel-art/city 1/2.png" id="2_jqer6"]
 [ext_resource type="Texture2D" uid="uid://cnytx17okmlgw" path="res://assets/free-city-backgrounds-pixel-art/city 1/3.png" id="3_t04ws"]
 [ext_resource type="Texture2D" uid="uid://breihcsiq7uy1" path="res://assets/free-city-backgrounds-pixel-art/city 1/4.png" id="4_nqopb"]
@@ -17,8 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://c2dcybiuschqu" path="res://collectibles/alternativa_d.tscn" id="15_o2x5t"]
 [ext_resource type="PackedScene" uid="uid://durxk736hk230" path="res://collectibles/alternativa_e.tscn" id="16_0qmbn"]
 [ext_resource type="PackedScene" uid="uid://bnpju53qiwwvx" path="res://hud/timer.tscn" id="17_252ju"]
-[ext_resource type="PackedScene" uid="uid://dlui33rrsgksj" path="res://fases/pause_menu.tscn" id="18_g1dme"]
-[ext_resource type="PackedScene" uid="uid://dhdn24ofwfwm" path="res://fases/game_over.tscn" id="19_8c3j4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4f3"]
 size = Vector2(217, 942)
@@ -283,7 +281,7 @@ physics_layer_0/collision_layer = 2
 sources/6 = SubResource("TileSetAtlasSource_60p4r")
 
 [node name="fase1" type="Node2D"]
-script = ExtResource("1_y0ivt")
+script = ExtResource("1_8c3j4")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -378,9 +376,6 @@ tile_set = SubResource("TileSet_2ayi0")
 tile_map_data = PackedByteArray("AAArACMABgAAAAIAAAAtACEABgAAAAIAAAAtACMABgAAAAIAAAAvAB8ABgAAAAIAAAAvACEABgAAAAIAAAAvACMABgAAAAIAAAAxAB0ABgAAAAIAAAAxAB8ABgAAAAIAAAAxACEABgAAAAIAAAAxACMABgAAAAIAAAAzAB0ABgAAAAIAAAAzAB8ABgAAAAIAAAAzACEABgAAAAIAAAAzACMABgAAAAIAAAA1AB0ABgAAAAIAAAA1AB8ABgAAAAIAAAA1ACEABgAAAAIAAAA1ACMABgAAAAIAAAA3AB0ABgAAAAIAAAA3AB8ABgAAAAIAAAA3ACEABgAAAAIAAAA3ACMABgAAAAIAAAA5ACEABgAAAAIAAAA5ACMABgAAAAIAAAA7ACMABgAAAAIAAAA5AB8ABgAAAAIAAAA7ACEABgAAAAIAAAA9ACMABgAAAAIAAAA=")
 tile_set = SubResource("TileSet_3tmfl")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_dvnh0")]
-position = Vector2(578, 553)
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_qy0vw")
 autoplay = true
@@ -389,18 +384,6 @@ parameters/looping = true
 [node name="pergunta" parent="." instance=ExtResource("11_m4eng")]
 
 [node name="Timer" parent="." instance=ExtResource("17_252ju")]
-
-[node name="PauseMenu" parent="." instance=ExtResource("18_g1dme")]
-process_mode = 3
-visible = false
-
-[node name="GameOver" parent="." instance=ExtResource("19_8c3j4")]
-process_mode = 3
-visible = false
-offset_left = 174.485
-offset_top = 47.59
-offset_right = 174.485
-offset_bottom = 47.59
 
 [node name="alternativa_a" parent="." instance=ExtResource("12_oowkq")]
 position = Vector2(40, 394)
@@ -416,6 +399,9 @@ position = Vector2(346, 448)
 
 [node name="alternativa_e" parent="." instance=ExtResource("16_0qmbn")]
 position = Vector2(106, 495)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_dvnh0")]
+position = Vector2(523, 555)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="collected" from="alternativa_a" to="." method="_on_alternativa_a_collected"]
