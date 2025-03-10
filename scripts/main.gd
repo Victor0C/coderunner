@@ -3,35 +3,43 @@ extends Node2D
 @onready var PauseMenu = $PauseMenu
 @onready var GmOverPanel = $GameOver
 @onready var numero_fase = $numero_fase
+@onready var fases = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	get_fases()
+	renderizar_fase()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
+func get_fases():
+	var dir = DirAccess.open("res://fases")
+	if dir:
+		var files = dir.get_files()
+		for file in files:
+			if file.ends_with(".tscn"):  # Filtra apenas cenas
+				fases.append(file)
+	else:
+		print("Erro ao abrir a pasta 'fases'.")
 
-func _on_fase_1_timeout() -> void:
+func renderizar_fase():
+	var random_file = fases[randi() % fases.size()]
+	var fase_tscn = load("res://fases/" + random_file)
+	var fase = fase_tscn.instantiate()
+	fase.win.connect(win)
+	fase.timeout.connect(timeout)
+	get_tree().current_scene.add_child(fase)
+	get_tree().current_scene.move_child(fase, 0)
+	fase.visible = true
+
+func timeout() -> void:
 	GmOverPanel.visible = true
 	PauseMenu.set_process(false)
 	get_tree().paused = true
 
-
-func _on_fase_1_win(emissor) -> void:
+func win(emissor) -> void:
 	emissor.queue_free()
-	var fase2_scene = load("res://fases/fase2.tscn")
-	var fase2 = fase2_scene.instantiate()
-	fase2.win.connect(_on_fase_1_win)
-	fase2.timeout.connect(_on_fase_1_timeout)
-	
-	if !fase2:
-		print('não pegou a fase')
-	else:
-		get_tree().current_scene.add_child(fase2)
-		get_tree().current_scene.move_child(fase2, 0)
-		fase2.visible = true
-		numero_fase.fase += 1
-	
+	renderizar_fase()
+	numero_fase.fase += 1

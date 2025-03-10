@@ -11,6 +11,10 @@ func _ready() -> void:
 	if perguntas:
 		exibir_pergunta_aleatoria(perguntas)
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
 func carregar_perguntas(caminho: String) -> Array:
 	var file = FileAccess.open(caminho, FileAccess.READ)
 	if file:
@@ -29,6 +33,3 @@ func exibir_pergunta_aleatoria(perguntas: Array):
 	rich_text.append_text(pergunta["pergunta"] + "\n")
 	for alternativa in pergunta["alternativas"]:
 		rich_text.append_text("%s\n" % alternativa)
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
