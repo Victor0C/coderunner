@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://daya2vgnwc6a4"]
+
+[ext_resource type="Script" uid="uid://d1ny8xs2x1hcp" path="res://scripts/numero_fase.gd" id="1_son75"]
+
+[sub_resource type="SystemFont" id="SystemFont_llq2q"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_s032e"]
+font_size = 26
+
+[node name="numero_fase" type="Node2D"]
+script = ExtResource("1_son75")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 3.0
+offset_right = 85.0
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("SystemFont_llq2q")
+text = "FASE 1"
+label_settings = SubResource("LabelSettings_s032e")

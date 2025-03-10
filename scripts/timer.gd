@@ -22,9 +22,9 @@ func _process(delta: float) -> void:
 			timeout_notified = true
 		
 	if current_time <= 9:
-		label.text = '0' + str(current_time)
+		label.text = 'TEMPO: ' + ('0' + str(current_time))
 	else:
-		label.text = str(current_time)
+		label.text = 'TEMPO: ' + str(current_time)
 	
 
 func _on_timer_1_timeout() -> void:

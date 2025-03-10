@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var PauseMenu = $PauseMenu
 @onready var GmOverPanel = $GameOver
+@onready var numero_fase = $numero_fase
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -32,4 +33,5 @@ func _on_fase_1_win(emissor) -> void:
 		get_tree().current_scene.add_child(fase2)
 		get_tree().current_scene.move_child(fase2, 0)
 		fase2.visible = true
+		numero_fase.fase += 1
 	

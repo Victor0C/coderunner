@@ -15,11 +15,11 @@ script = ExtResource("1_p2oj3")
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
 offset_left = -3.0
-offset_top = -8.0
-offset_right = 27.0
-offset_bottom = 28.0
+offset_top = 24.0
+offset_right = 130.0
+offset_bottom = 60.0
 theme_override_fonts/font = SubResource("SystemFont_fikr6")
-text = "30"
+text = "TEMPO: 30"
 label_settings = SubResource("LabelSettings_1vy8k")
 
 [node name="timer1" type="Timer" parent="."]
