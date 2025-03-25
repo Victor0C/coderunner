@@ -4,6 +4,7 @@ extends Node2D
 @onready var GmOverPanel = $GameOver
 @onready var numero_fase = $numero_fase
 @onready var fases = []
+@onready var last_fase
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -26,7 +27,12 @@ func get_fases():
 		print("Erro ao abrir a pasta 'fases'.")
 
 func renderizar_fase():
-	var random_file = fases[randi() % fases.size()]
+	var random_file
+	while true:
+		random_file = fases[randi() % fases.size()]
+		if random_file != last_fase:
+			last_fase = random_file
+			break
 	var fase_tscn = load("res://fases/" + random_file)
 	var fase = fase_tscn.instantiate()
 	fase.win.connect(win)
