@@ -22,8 +22,7 @@ buses/default_bus_layout=""
 [display]
 
 window/size/viewport_height=600
-window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/stretch/mode="canvas_items"
 window/layer_5=""
 window/layer_4=""
 window/layer_3=""

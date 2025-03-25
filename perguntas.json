@@ -66,5 +66,434 @@
 		"pergunta": "Qual será a saída do seguinte código Python?\nprint(len('Godot'))",
 		"alternativas": ["A) 4", "B) 5", "C) 6", "D) '5'", "E) Erro"],
 		"alternativa_correta": "B) 5"
+	},
+	{
+		"pergunta": "Qual é a função do método 'map()' em JavaScript?",
+		"alternativas": [
+			"A) Iterar sobre um array e aplicar uma função a cada elemento",
+			"B) Ordenar os elementos de um array",
+			"C) Filtrar elementos de um array",
+			"D) Reduzir um array a um único valor",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Iterar sobre um array e aplicar uma função a cada elemento"
+	},
+	{
+		"pergunta": "Qual é o resultado de '2' + 2 em JavaScript?",
+		"alternativas": ["A) 4", "B) '22'", "C) Erro", "D) 22", "E) '4'"],
+		"alternativa_correta": "B) '22'"
+	},
+	{
+		"pergunta": "Qual método é usado para adicionar um elemento ao final de um array em JavaScript?",
+		"alternativas": [
+			"A) push()",
+			"B) pop()",
+			"C) shift()",
+			"D) unshift()",
+			"E) concat()"
+		],
+		"alternativa_correta": "A) push()"
+	},
+	{
+		"pergunta": "Qual é o operador de exponenciação em Python?",
+		"alternativas": ["A) ^", "B) **", "C) *", "D) //", "E) %"],
+		"alternativa_correta": "B) **"
+	},
+	{
+		"pergunta": "Qual é a função do método 'filter()' em JavaScript?",
+		"alternativas": [
+			"A) Iterar sobre um array e aplicar uma função a cada elemento",
+			"B) Filtrar elementos de um array com base em uma condição",
+			"C) Reduzir um array a um único valor",
+			"D) Ordenar os elementos de um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "B) Filtrar elementos de um array com base em uma condição"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(type(3.14))",
+		"alternativas": ["A) int", "B) float", "C) str", "D) bool", "E) None"],
+		"alternativa_correta": "B) float"
+	},
+	{
+		"pergunta": "Qual método é usado para remover o primeiro elemento de um array em JavaScript?",
+		"alternativas": [
+			"A) pop()",
+			"B) shift()",
+			"C) unshift()",
+			"D) splice()",
+			"E) slice()"
+		],
+		"alternativa_correta": "B) shift()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'reduce()' em JavaScript?",
+		"alternativas": [
+			"A) Iterar sobre um array e aplicar uma função a cada elemento",
+			"B) Filtrar elementos de um array com base em uma condição",
+			"C) Reduzir um array a um único valor",
+			"D) Ordenar os elementos de um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "C) Reduzir um array a um único valor"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(10 // 3)",
+		"alternativas": ["A) 3", "B) 3.333", "C) 3.0", "D) 4", "E) Erro"],
+		"alternativa_correta": "A) 3"
+	},
+	{
+		"pergunta": "Qual método é usado para adicionar um elemento ao início de um array em JavaScript?",
+		"alternativas": [
+			"A) push()",
+			"B) pop()",
+			"C) shift()",
+			"D) unshift()",
+			"E) concat()"
+		],
+		"alternativa_correta": "D) unshift()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'slice()' em JavaScript?",
+		"alternativas": [
+			"A) Remover elementos de um array",
+			"B) Retornar uma cópia de parte de um array",
+			"C) Adicionar elementos a um array",
+			"D) Ordenar os elementos de um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "B) Retornar uma cópia de parte de um array"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(2 * '3')",
+		"alternativas": ["A) 6", "B) '33'", "C) '6'", "D) Erro", "E) 33"],
+		"alternativa_correta": "B) '33'"
+	},
+	{
+		"pergunta": "Qual método é usado para ordenar os elementos de um array em JavaScript?",
+		"alternativas": [
+			"A) sort()",
+			"B) reverse()",
+			"C) map()",
+			"D) filter()",
+			"E) reduce()"
+		],
+		"alternativa_correta": "A) sort()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'concat()' em JavaScript?",
+		"alternativas": [
+			"A) Juntar dois ou mais arrays",
+			"B) Remover elementos de um array",
+			"C) Filtrar elementos de um array",
+			"D) Ordenar os elementos de um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Juntar dois ou mais arrays"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(10 % 3)",
+		"alternativas": ["A) 1", "B) 3", "C) 0", "D) 10", "E) Erro"],
+		"alternativa_correta": "A) 1"
+	},
+	{
+		"pergunta": "Qual método é usado para inverter a ordem dos elementos de um array em JavaScript?",
+		"alternativas": [
+			"A) sort()",
+			"B) reverse()",
+			"C) map()",
+			"D) filter()",
+			"E) reduce()"
+		],
+		"alternativa_correta": "B) reverse()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'join()' em JavaScript?",
+		"alternativas": [
+			"A) Juntar elementos de um array em uma string",
+			"B) Dividir uma string em um array",
+			"C) Filtrar elementos de um array",
+			"D) Ordenar os elementos de um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Juntar elementos de um array em uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Hello' + 'World')",
+		"alternativas": [
+			"A) 'HelloWorld'",
+			"B) 'Hello World'",
+			"C) Erro",
+			"D) 'Hello+World'",
+			"E) 'HelloWorld'"
+		],
+		"alternativa_correta": "A) 'HelloWorld'"
+	},
+	{
+		"pergunta": "Qual método é usado para dividir uma string em um array em JavaScript?",
+		"alternativas": [
+			"A) split()",
+			"B) join()",
+			"C) slice()",
+			"D) concat()",
+			"E) reverse()"
+		],
+		"alternativa_correta": "A) split()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'toString()' em JavaScript?",
+		"alternativas": [
+			"A) Converter um número em uma string",
+			"B) Converter uma string em um número",
+			"C) Converter um array em uma string",
+			"D) Converter um objeto em uma string",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "D) Converter um objeto em uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(3 + 2 * 2)",
+		"alternativas": ["A) 10", "B) 7", "C) 12", "D) 5", "E) Erro"],
+		"alternativa_correta": "B) 7"
+	},
+	{
+		"pergunta": "Qual método é usado para converter uma string em um número inteiro em JavaScript?",
+		"alternativas": [
+			"A) parseInt()",
+			"B) parseFloat()",
+			"C) toString()",
+			"D) Number()",
+			"E) String()"
+		],
+		"alternativa_correta": "A) parseInt()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'toFixed()' em JavaScript?",
+		"alternativas": [
+			"A) Arredondar um número para o inteiro mais próximo",
+			"B) Formatar um número com um número fixo de casas decimais",
+			"C) Converter um número em uma string",
+			"D) Converter uma string em um número",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "B) Formatar um número com um número fixo de casas decimais"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'[1])",
+		"alternativas": ["A) 'P'", "B) 'y'", "C) 't'", "D) 'h'", "E) Erro"],
+		"alternativa_correta": "B) 'y'"
+	},
+	{
+		"pergunta": "Qual método é usado para converter uma string em um número de ponto flutuante em JavaScript?",
+		"alternativas": [
+			"A) parseInt()",
+			"B) parseFloat()",
+			"C) toString()",
+			"D) Number()",
+			"E) String()"
+		],
+		"alternativa_correta": "B) parseFloat()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'toUpperCase()' em JavaScript?",
+		"alternativas": [
+			"A) Converter uma string para minúsculas",
+			"B) Converter uma string para maiúsculas",
+			"C) Converter um número em uma string",
+			"D) Converter uma string em um número",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "B) Converter uma string para maiúsculas"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint(len([1, 2, 3]))",
+		"alternativas": ["A) 1", "B) 2", "C) 3", "D) 4", "E) Erro"],
+		"alternativa_correta": "C) 3"
+	},
+	{
+		"pergunta": "Qual método é usado para converter uma string para minúsculas em JavaScript?",
+		"alternativas": [
+			"A) toLowerCase()",
+			"B) toUpperCase()",
+			"C) toString()",
+			"D) Number()",
+			"E) String()"
+		],
+		"alternativa_correta": "A) toLowerCase()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'trim()' em JavaScript?",
+		"alternativas": [
+			"A) Remover espaços em branco no início e no final de uma string",
+			"B) Adicionar espaços em branco ao início de uma string",
+			"C) Adicionar espaços em branco ao final de uma string",
+			"D) Remover todos os espaços em branco de uma string",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Remover espaços em branco no início e no final de uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'.upper())",
+		"alternativas": [
+			"A) 'python'",
+			"B) 'PYTHON'",
+			"C) 'Python'",
+			"D) Erro",
+			"E) 'PYthon'"
+		],
+		"alternativa_correta": "B) 'PYTHON'"
+	},
+	{
+		"pergunta": "Qual método é usado para verificar se uma string contém uma substring em JavaScript?",
+		"alternativas": [
+			"A) includes()",
+			"B) contains()",
+			"C) indexOf()",
+			"D) search()",
+			"E) find()"
+		],
+		"alternativa_correta": "A) includes()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'charAt()' em JavaScript?",
+		"alternativas": [
+			"A) Retornar o caractere em uma posição específica de uma string",
+			"B) Retornar o índice de uma substring em uma string",
+			"C) Retornar o comprimento de uma string",
+			"D) Retornar a última ocorrência de uma substring em uma string",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Retornar o caractere em uma posição específica de uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'.lower())",
+		"alternativas": [
+			"A) 'python'",
+			"B) 'PYTHON'",
+			"C) 'Python'",
+			"D) Erro",
+			"E) 'PYthon'"
+		],
+		"alternativa_correta": "A) 'python'"
+	},
+	{
+		"pergunta": "Qual método é usado para encontrar o índice de uma substring em uma string em JavaScript?",
+		"alternativas": [
+			"A) indexOf()",
+			"B) includes()",
+			"C) search()",
+			"D) find()",
+			"E) charAt()"
+		],
+		"alternativa_correta": "A) indexOf()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'replace()' em JavaScript?",
+		"alternativas": [
+			"A) Substituir uma substring por outra em uma string",
+			"B) Remover uma substring de uma string",
+			"C) Adicionar uma substring a uma string",
+			"D) Dividir uma string em um array",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Substituir uma substring por outra em uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'.replace('P', 'J'))",
+		"alternativas": [
+			"A) 'Jython'",
+			"B) 'Python'",
+			"C) 'Jython'",
+			"D) Erro",
+			"E) 'JYTHON'"
+		],
+		"alternativa_correta": "A) 'Jython'"
+	},
+	{
+		"pergunta": "Qual método é usado para dividir uma string em um array com base em um delimitador em JavaScript?",
+		"alternativas": [
+			"A) split()",
+			"B) join()",
+			"C) slice()",
+			"D) concat()",
+			"E) reverse()"
+		],
+		"alternativa_correta": "A) split()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'substring()' em JavaScript?",
+		"alternativas": [
+			"A) Retornar uma parte de uma string",
+			"B) Substituir uma parte de uma string",
+			"C) Dividir uma string em um array",
+			"D) Juntar duas strings",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Retornar uma parte de uma string"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'[1:4])",
+		"alternativas": [
+			"A) 'yth'",
+			"B) 'Pyt'",
+			"C) 'thon'",
+			"D) 'Python'",
+			"E) Erro"
+		],
+		"alternativa_correta": "A) 'yth'"
+	},
+	{
+		"pergunta": "Qual método é usado para juntar elementos de um array em uma string em JavaScript?",
+		"alternativas": [
+			"A) join()",
+			"B) split()",
+			"C) concat()",
+			"D) slice()",
+			"E) reverse()"
+		],
+		"alternativa_correta": "A) join()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'startsWith()' em JavaScript?",
+		"alternativas": [
+			"A) Verificar se uma string começa com uma substring específica",
+			"B) Verificar se uma string termina com uma substring específica",
+			"C) Verificar se uma string contém uma substring específica",
+			"D) Verificar se uma string é igual a outra string",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Verificar se uma string começa com uma substring específica"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'.startswith('P'))",
+		"alternativas": ["A) True", "B) False", "C) 'P'", "D) Erro", "E) None"],
+		"alternativa_correta": "A) True"
+	},
+	{
+		"pergunta": "Qual método é usado para verificar se uma string termina com uma substring específica em JavaScript?",
+		"alternativas": [
+			"A) endsWith()",
+			"B) startsWith()",
+			"C) includes()",
+			"D) indexOf()",
+			"E) search()"
+		],
+		"alternativa_correta": "A) endsWith()"
+	},
+	{
+		"pergunta": "Qual é a função do método 'toLocaleString()' em JavaScript?",
+		"alternativas": [
+			"A) Converter um número em uma string formatada de acordo com as convenções locais",
+			"B) Converter uma string em um número",
+			"C) Converter um array em uma string",
+			"D) Converter um objeto em uma string",
+			"E) Nenhuma das anteriores"
+		],
+		"alternativa_correta": "A) Converter um número em uma string formatada de acordo com as convenções locais"
+	},
+	{
+		"pergunta": "Qual é a saída do código Python?\nprint('Python'.endswith('n'))",
+		"alternativas": ["A) True", "B) False", "C) 'n'", "D) Erro", "E) None"],
+		"alternativa_correta": "A) True"
 	}
 ]

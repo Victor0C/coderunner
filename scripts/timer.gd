@@ -1,7 +1,7 @@
 extends Node2D
 
 
-@export var current_time: int = 30
+@export var current_time: int = 40
 @onready var label := $Label as Label
 @onready var timer := $timer1 as Timer
 

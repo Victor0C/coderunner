@@ -1,6 +1,7 @@
 extends Control
 
 @onready var rich_text = $ColorRect/HBoxContainer/VBoxContainer/RichTextLabel
+@onready var pergunta_anterior
 
 @export var resposta_correta: String
 @export var alternativas: Array = []
@@ -27,8 +28,16 @@ func carregar_perguntas(caminho: String) -> Array:
 	
 func exibir_pergunta_aleatoria(perguntas: Array):
 	rich_text.clear()
-	var pergunta = perguntas.pick_random()  # Escolhe uma pergunta aleatória
+	var pergunta
+	while true:
+		pergunta = perguntas.pick_random()
+		if pergunta != pergunta_anterior:
+			pergunta_anterior = pergunta
+			break
 	resposta_correta = pergunta["alternativa_correta"]
+	
+	print(resposta_correta)
+	
 	alternativas = pergunta["alternativas"]
 	rich_text.append_text(pergunta["pergunta"] + "\n")
 	for alternativa in pergunta["alternativas"]:
